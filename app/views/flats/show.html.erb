@@ -1,0 +1,19 @@
+<h1><%= @flat.name %></h1>
+
+
+<div class="card">
+  <img src="#" />
+  <h2><%= @flat.name %></h2>
+  <p><%= @flat.address %></p>
+  <div class="card-bottom d-flex justify-content-start">
+    <div><i class="fas fa-user-friends"></i>  <%= @flat.number_of_guests%></div>
+    <div><i class="fas fa-euro-sign ml-3"></i>  <%= @flat.price_per_night %></div>
+  </div>
+</div>
+
+<br>
+<br>
+<%= link_to "Edit this flat", edit_flat_path, class:"btn btn-primary" %>
+<br>
+<br>
+<%= link_to "Back to index", flats_path, class:"btn btn-primary"  %>
